@@ -36,6 +36,7 @@ export default function Home() {
         <div className={styles.grid}>
 
         <img src="/promocao.jpeg" alt="Promoção" className={styles.logoPromo} />
+        
 
 
         <div style={{ padding: 50}}>
@@ -43,6 +44,11 @@ export default function Home() {
             Não espere uma data especial  para presentear quem você ama,
             surpreenda a pessoa amada com nossos lindos buquês</p>
         </div>
+        <a className={styles.card}>
+              <img src="/indc.jpeg" alt="Vercel Logo" className={styles.logo} />
+              <p className={styles.description}>
+              </p>
+          </a>
 
           <a className={styles.card}>
               <img src="/fotosd.jpeg" alt="Vercel Logo" className={styles.logo} />
@@ -60,14 +66,14 @@ export default function Home() {
             />
             <h3>Buquê Alegria </h3>
             <div>
-              <p className={styles.description}>20 bombons outo branco</p>
+              <p className={styles.description}>20 bombons ouro branco</p>
               <p className={styles.description}>06 Girassóis</p>
               <p className={styles.description}>R$ 120,00</p>
             </div>
           </a>
           <a className={styles.card}>
             <img src="/buque4.jpeg" alt="Vercel Logo" className={styles.logo} />
-            <h3>Buquê Pixão </h3>
+            <h3>Buquê Paixão </h3>
             <div>
               <p className={styles.description}>20 Ferreiros</p>
               <p className={styles.description}>16 rosas</p>
@@ -75,14 +81,6 @@ export default function Home() {
             </div>
           </a>
 
-
-
-          <div style={{ padding: 50}}>
-            <p className={styles.msgPromo}>cada embalagem pedende da disponibilidade em estoque</p>
-            <p className={styles.msgPromo}>manter produto sobre refrigeração</p>
-            <p className={styles.msgPromo}>consumir em até 24 horas</p>
-          </div>
-      
           <a className={styles.card}>
             <img src="/buque.jpeg" alt="Vercel Logo" className={styles.logo} />
             <h3>Buquê Ternura </h3>
@@ -122,13 +120,19 @@ export default function Home() {
         </div>
       </main>
 
+      <div style={{ padding: 50}}>
+            <p className={styles.msgPromo}>cada embalagem depende da disponibilidade em estoque</p>
+            <p className={styles.msgPromo}>manter produto sobre refrigeração</p>
+            <p className={styles.msgPromo}>consumir em até 24 horas</p>
+          </div>
+
       <footer className={styles.footer}>
         <a
           href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Powered by{' '}Discovery ® Henrique Tiago Tyminski
+          <p style={{fontSize: 13,opacity: 5,fontFamily: 'monospace'}}><span style={{fontWeight:'bold'}}>Discovery ®</span> Henrique Tiago Tyminski</p>
           
         </a>
       </footer>
